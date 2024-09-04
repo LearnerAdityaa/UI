@@ -1,0 +1,59 @@
+body {
+  background-color: white;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #3a3a3c;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.available {
+  background-color: #34d399; /* Green */
+}
+
+.card.reserved {
+  background-color: #f87171; /* Red */
+}
+
+.card h6 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 0 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.reserve {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.button.cancel {
+  background-color: #ef4444;
+  color: white;
+}
+
+.button i {
+  margin-right: 5px;
+}

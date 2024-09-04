@@ -1,112 +1,176 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Report</title>
-    <!-- Bootstrap CSS -->
+    <meta charset="utf-8" />
+    <title>BHOKLAGYO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <style></style>
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <header class="bg-light py-3">
-      <div class="container text-center">
-        <h1>BHOKLAGYO</h1>
-        <p class="lead">Monthly Report - August 2024</p>
+    <!-- Sidebar -->
+    <div class="d-flex" style="height: 100vh; overflow: hidden">
+      <div
+        class="bg-dark text-white p-3"
+        style="width: 250px; height: 100vh; overflow-y: auto"
+      >
+        <h2 style="color: white; text-align: center">Admin Dashboard</h2>
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="order.html">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="booking.html">Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="customer.html">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="report.html">Reports</a>
+          </li>
+        </ul>
       </div>
-    </header>
 
-    <main class="container mt-5">
-      <!-- Overview Section -->
-      <section class="mb-5">
-        <h2 class="mb-3">Overview</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          volutpat dolor vel orci egestas, ac pharetra metus varius. In hac
-          habitasse platea dictumst. Vivamus in vehicula justo. Donec fermentum.
-        </p>
-      </section>
-
-      <!-- Sales Summary Section -->
-      <section class="mb-5">
-        <h2 class="mb-3">Sales Summary</h2>
-        <div class="table-responsive">
-          <table class="table table-bordered">
-            <thead class="table-dark">
-              <tr>
-                <th>Date</th>
-                <th>Total Sales</th>
-                <th>Total Orders</th>
-                <th>Average Order Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>01-Aug-2024</td>
-                <td>$1,200</td>
-                <td>80</td>
-                <td>$15.00</td>
-              </tr>
-              <tr>
-                <td>02-Aug-2024</td>
-                <td>$1,350</td>
-                <td>90</td>
-                <td>$15.00</td>
-              </tr>
-              <!-- More rows as needed -->
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Popular Dishes Section -->
-      <section class="mb-5">
-        <h2 class="mb-3">Popular Dishes</h2>
-        <div class="row">
-          <article class="col-md-4 mb-4">
-            <div class="card">
-              <img
-                src="https://www.cubesnjuliennes.com/wp-content/uploads/2018/12/Spicy-Chicken-Fry-Recipe.jpg"
-                class="card-img-top"
-                alt="Chicken Fry"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Chicken Fry</h5>
-                <p class="card-text">
-                  Chicken Fry is a classic dish that features tender pieces of
-                  chicken, marinated in a flavorful blend of spices and herbs,
-                  then deep-fried to golden perfection. The chicken is crispy on
-                  the outside while remaining juicy and succulent on the inside.
-                </p>
-              </div>
-            </div>
-          </article>
-          <!-- Repeat for more dishes -->
-        </div>
-      </section>
-
-      <!-- Customer Feedback Section -->
-      <section class="mb-5">
-        <h2 class="mb-3">Customer Feedback</h2>
-        <div class="list-group">
-          <div class="list-group-item">
-            <h5 class="mb-1">John Doe</h5>
-            <p class="mb-1">"Great food and excellent service!"</p>
-            <small>Rated: 5/5</small>
+      <!-- Main Content -->
+      <div class="container-xxl py-5 overflow-auto" style="height: 100vh">
+        <header class="bg-light py-3">
+          <div class="container text-center">
+            <h1>BHOKLAGYO</h1>
+            <p class="lead">Monthly Report - August 2024</p>
           </div>
-          <!-- Repeat for more feedback -->
-        </div>
-      </section>
-    </main>
+        </header>
+        <main class="container mt-5">
+          <!-- Overview Section -->
+          <section class="mb-5">
+            <h2 class="mb-3">Overview</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              volutpat dolor vel orci egestas, ac pharetra metus varius. In hac
+              habitasse platea dictumst. Vivamus in vehicula justo. Donec
+              fermentum.
+            </p>
+          </section>
 
-    <footer class="bg-light py-3 text-center">
-      <p>&copy; 2024 BHOKLAGYO Restaurant. All rights reserved.</p>
-    </footer>
+          <!-- Sales Summary Section -->
+          <section class="mb-5">
+            <h2 class="mb-3">Sales Summary</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Date</th>
+                    <th>Total Sales</th>
+                    <th>Total Orders</th>
+                    <th>Average Order Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01-Aug-2024</td>
+                    <td>$1,200</td>
+                    <td>80</td>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr>
+                    <td>02-Aug-2024</td>
+                    <td>$1,350</td>
+                    <td>90</td>
+                    <td>$15.00</td>
+                  </tr>
+                  <!-- More rows as needed -->
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-    <!-- Bootstrap JS -->
+          <!-- Popular Dishes Section -->
+          <section class="mb-5">
+            <h2 class="mb-3">Popular Dishes</h2>
+            <div class="row">
+              <article class="col-md-4 mb-4">
+                <div class="card">
+                  <img
+                    src="https://www.cubesnjuliennes.com/wp-content/uploads/2018/12/Spicy-Chicken-Fry-Recipe.jpg"
+                    class="card-img-top"
+                    alt="Chicken Fry"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Fry</h5>
+                    <p class="card-text">
+                      Chicken Fry is a classic dish that features tender pieces
+                      of chicken, marinated in a flavorful blend of spices and
+                      herbs, then deep-fried to golden perfection. The chicken
+                      is crispy on the outside while remaining juicy and
+                      succulent on the inside.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <!-- Repeat for more dishes -->
+            </div>
+          </section>
+
+          <!-- Customer Feedback Section -->
+          <section class="mb-5">
+            <h2 class="mb-3">Customer Feedback</h2>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h5 class="mb-1">John Doe</h5>
+                <p class="mb-1">"Great food and excellent service!"</p>
+                <small>Rated: 5/5</small>
+              </div>
+              <!-- Repeat for more feedback -->
+            </div>
+          </section>
+        </main>
+        <footer class="bg-light py-3 text-center">
+          <p>&copy; 2024 BHOKLAGYO Restaurant. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -44,117 +44,103 @@
   </head>
 
   <body>
-    <div class="container-xxl bg-white p-0">
-      <!-- Spinner Start -->
-      <div
-        id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      >
-        <div
-          class="spinner-border text-primary"
-          style="width: 3rem; height: 3rem"
-          role="status"
-        >
-          <span class="sr-only">Loading...</span>
-        </div>
-      </div>
-      <!-- Spinner End -->
+    <!-- Sidebar -->
+    <div class="d-flex">
+      <div class="bg-dark text-white p-3" style="width: 250px; height: 100vh">
+        <h2 style="color: white; text-align: center">Admin Dashboard</h2>
 
-      <!-- Reservation Start -->
-      <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="row justify-content-center">
-          <div class="col-md-6 bg-dark d-flex align-items-center">
-            <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-              <h1 class="text-white mb-4">Add Item</h1>
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                      <label for="name">Food Name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="number"
-                        placeholder="Your Email"
-                      />
-                      <label for="number">Price</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <select class="form-select" id="category">
-                        <option value="1">Breakfast</option>
-                        <option value="2">Launch</option>
-                        <option value="3">Dinner</option>
-                      </select>
-                      <label for="select1">Food Category</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="file"
-                        class="form-control"
-                        id="image"
-                        placeholder="image of food"
-                      />
-                      <label for="name">Food Image</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Food Description"
-                        id="description"
-                        style="height: 100px"
-                      ></textarea>
-                      <label for="description">Food Description</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Add Now
-                    </button>
-                  </div>
-                </div>
-              </form>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="order.html">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="booking.html">Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="customer.html">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="report.html">Reports</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex-grow-1 p-4">
+        <h1>Welcome to the Restaurant Management System</h1>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+                <label for="name">Food Name</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  placeholder="Your Email"
+                />
+                <label for="number">Price</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <select class="form-select" id="category">
+                  <option value="1">Breakfast</option>
+                  <option value="2">Launch</option>
+                  <option value="3">Dinner</option>
+                </select>
+                <label for="select1">Food Category</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input
+                  type="file"
+                  class="form-control"
+                  id="image"
+                  placeholder="image of food"
+                />
+                <label for="name">Food Image</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Food Description"
+                  id="description"
+                  style="height: 100px"
+                ></textarea>
+                <label for="description">Food Description</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary w-100 py-3" type="submit">
+                Add Now
+              </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
-
-      <!-- Reservation Start -->
-
-      <!-- Back to Top -->
-      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-        ><i class="bi bi-arrow-up"></i
-      ></a>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

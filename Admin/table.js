@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const tables = [
     { id: 1, status: "available" },
-    { id: 2, status: "Reserved" },
+    { id: 2, status: "available" },
     { id: 3, status: "available" },
     { id: 4, status: "available" },
     { id: 5, status: "available" },
